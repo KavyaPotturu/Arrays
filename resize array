@@ -1,0 +1,36 @@
+import java.util.*;
+class Main{
+    public void printArray(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+    public static int[] resizearr(int[] arr,int capacity){
+        int temp[]=new int[capacity];
+        for(int i=0;i<arr.length;i++){
+            temp[i]=arr[i];
+        }
+        arr=temp;
+        return arr;
+    }
+    
+    public static void main(String[] args){
+        Main m=new Main();
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Original array:"+arr.length);
+        int capacity=sc.nextInt();
+        arr=m.resizearr(arr,capacity);
+        System.out.print("resized array:"+arr.length);
+        
+        
+       
+        
+       
+       
+    }    
+}

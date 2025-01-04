@@ -1,0 +1,27 @@
+import java.util.*;
+class Main{
+    public boolean isPalindrome(String s){
+        char[] c=s.toCharArray();
+        int start=0;
+        int end=c.length-1;
+        while(start<end){
+            if(c[start]!=c[end]){
+                return false;
+            }
+            else{
+                start++;
+                end--;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args){
+        Main m=new Main();
+        if(m.isPalindrome("that")){
+            System.out.println("Given string is a palindrome.");
+        }
+        else{
+            System.out.println("Given is not a palindrome.");
+        }
+    }
+}

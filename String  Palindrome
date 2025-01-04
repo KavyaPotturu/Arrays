@@ -17,7 +17,8 @@ class Main{
     }
     public static void main(String[] args){
         Main m=new Main();
-        if(m.isPalindrome("that")){
+        Scanner sc=new Scanner(System.in);
+        if(m.isPalindrome(sc.nextLine()){
             System.out.println("Given string is a palindrome.");
         }
         else{
